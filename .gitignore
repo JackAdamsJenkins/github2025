@@ -2,6 +2,7 @@
 # Vous pouvez mettre des commentaires dans votre fichier
 .code.js
 node_modules
-./css
-./img
+css
+img
 notadded.js
+.env

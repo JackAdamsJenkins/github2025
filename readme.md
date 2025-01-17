@@ -174,9 +174,10 @@ Pour cela, vous allez devoir :
 ```
 # Ceci est un commentaire pour le gitignore
 # Vous pouvez mettre des commentaires dans votre fichier
-.code.js
+code.js
 node_modules
-./css
-./img
-.notadded.js
+css
+img
+notadded.js
+
 ```
