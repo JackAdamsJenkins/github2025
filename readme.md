@@ -179,5 +179,33 @@ node_modules
 css
 img
 notadded.js
-
+.env
 ```
+
+### Exercice
+* Dans un de vos repository, ajoutez un nouveau fichier (.js, .html, .autre, on s'en fiche)
+* Une fois le fichier ajouté, publier la modification sur github (votre repo doit avoir le fichier)
+* Débrouillez-vous ensuite pour supprimer le fichier que vous venez d'ajouter et répercuter la suppression sur votre repo github
+
+### Exercice 2 
+* Créez un dossier dans votre repo git
+* Ajoutez un fichier dans ce dossier
+* Ajoutez un fichier .gitignore dans votre projet
+* Publiez la modification sur github
+* Vous ne devez PAS avoir le nouveau dossier dans votre repo github
+
+## Récupérer votre travail
+Pour récupérer votre travail sur une autre machine, ou simplement récupérer la dernière version en date, vous devez utiliser la commande `git clone URL_DU_REPOSITORY`
+
+par exemple : `git clone https://github.com/JackAdamsJenkins/github2025.git`
+
+Si vous clonez votre repo, vous allez être capable de continuer à travailler sur votre projet.
+
+Si vous clonez le repo d'un autre utilisateur, vous ne pourrez pas l'envoyer sur Github tel quel.
+Il faudra vous rendre dans le dossier de votre projet et supprimer le dossier `.git` qui est caché.
+Vous pouvez ensuite envoyer le repo sur vote compt Github (git init, git add, git commit, git push...).
+
+## Pull Request
+C'est une fonctionnalité clé des système de gesion de version basées sur git comme Github, Gitlab, BitBucket... Elle représente une demande de fusion des modifications (commits) d'une branche vers une autre, généralement de la branche d'une fonctionnalité vers la branche principale d'un projet.
+
+### Concept de la Pull Request (PR)
