@@ -133,3 +133,28 @@ Expliquer le pourquoi, pas le comment : Le code lui-même montre comment une cer
 
 **Toujours préférer l'utilisation de l'anglais pour vos messages de commit.**
 
+### Exemple d'un bon message de commit
+
+```
+Ajoute une fonctionnalité de recherche
+
+La page d'accueil avait besoin d'une fonctionnnalité de recherche
+pour aider les utilisateurs à trouver des contenus spécifiques.
+
+Cette modification ajoute un moteur de recherche et utilise l'API
+de recherche pour récupérer les résultats.
+
+Relatif à l'issue #123
+```
+
+Version anglaise du message de commit (a préferer)
+```
+Add search functionality
+
+Homepage needed a search feature to help users find specific content.
+
+This change adds a search engine and uses the search API to retrieve
+results.
+
+Related to issue #123
+```
