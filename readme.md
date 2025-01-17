@@ -209,3 +209,64 @@ Vous pouvez ensuite envoyer le repo sur vote compt Github (git init, git add, gi
 C'est une fonctionnalité clé des système de gesion de version basées sur git comme Github, Gitlab, BitBucket... Elle représente une demande de fusion des modifications (commits) d'une branche vers une autre, généralement de la branche d'une fonctionnalité vers la branche principale d'un projet.
 
 ### Concept de la Pull Request (PR)
+**Collaboration et revue de code** : La PR n'est pas seulement un mécanisme de fusion de code. C'est aussi un outil de collaboration. Lorsqu'un développeur soummet une PR, d'autres membres de l'équipe peuvent la consulter, laisser des commentaires, suggérer des modfications et même proposer des commits pour améliorer la PR avant qu'elle ne soit fusionnée.
+
+**Point de contrôle** : Avant la fusion, la PR fournit un point de contrôle pour s'assurer que le code respecter les qualités, passe tous les tests et n'introduit pas de régressions.
+
+**Intégration avec CI/CD** : Les PR sont souvent intégrées avec des outils d'Intégration Continue (CI) et de Livraison Continue (CD). Lorsqu'un PR est soumise, des tests automatisés peuvent être déclenchés, et le résultat de ces tests est souvent signalé directement dans l'interface de la PR.
+
+### Faire une Pull Request (PR)
+#### Fork du repository
+Avant de pouvoir soumettre une PR, vous devez avoir une copie du repository sur votre compte Github. Si ce n'est pas déjà fait :
+1. Aller sur la page Github du projet auquel vous souhaitez contribuer.
+2. Cliquer sur le bouton "Fork" situé en haut à droite de la page. Cela créera une copie du projet sur votre compte Github personnel.
+
+#### Cloner le fork
+Après avoir fait un fork, vous allez pouvoir travailler dessus. Pour cela, vous allez devoir le cloner sur votre propre machine :
+```
+git clone URL_DU_DEPOT (attention, c'est VOTRE repo que vous devez cloner, pas celui du projet original)
+git clone https://github.com/JackAdamsJenkins/hagileolivia.git
+```
+
+#### Créer une nouvelle branche
+Il est conseillé de créer une nouvelle branche pour chaque nouvelle fonctionnalité ou correction. Cela vous permet de garder le travail organisé et séparé.
+
+Pour créer une nouvelle branche, vous devez utiliser la commande `git checkout -b NomDeLaNouvelleBranche`
+
+##### Exemple
+```
+git checkout -b nom_de_la_branche
+git checkout -b interfaceGUI
+git checkout -b correctionBug
+git checkout -b search
+```
+##### Apporter les modifications
+Modifier le/les fichiers nécessaires et ajoutez-les à l'index : `git add nomDuFichier`
+
+Ou pour ajouter tous les fichiers modifiés d'un coup : `git add *`
+
+Ensuite, faites un commit de vos modifications : `git commit -m "message de commit"`
+
+##### Pousser la branche vers le fork
+```
+git push origin nom_de_labranche
+git push origin search
+```
+
+#### Créer la Pull Request
+1. Aller sur la page Github de votre fork
+2. Aller sur l'onglet "Pull requests" et cliquer sur le bouton "New pull request"
+3. Sélectionner votre nouvelle branche dans le menu déroulant "Compare"
+4. Assurez-vous que la branche de base (main) est celle du projet ORIGINAL et non celle de votre fork
+5. Vérifier les modifications et cliquer sur "Create Pull Request"
+6. Donner un titre à votre PR et décrire les modifications ou les raisons de votre PR
+7. Cliquer sur "Create pull request" pour soumettre votre PR
+
+## Exercice PR :
+* Rendez-vous sur ce repository https://github.com/JackAdamsJenkins/github2025
+* Faites un fork du repo
+* Faites un clone
+* Ajoutez un fichier VotrePrenom.md à la racine du repo et ajoutez-y votre prénom
+* Envoyez le fichier sur votre repo
+* Faites une PR
+
