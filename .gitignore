@@ -1,0 +1,7 @@
+# Ceci est un commentaire pour le gitignore
+# Vous pouvez mettre des commentaires dans votre fichier
+.code.js
+node_modules
+./css
+./img
+notadded.js

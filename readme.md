@@ -158,3 +158,25 @@ results.
 
 Related to issue #123
 ```
+
+## En savoir plus sur le langage markdown
+Pour la rédaction de vos fichiers Readme, n'hésitez pas à vous pencher sur la documentation markdown. Voici un lien pour vous aider : [Lien vers documentation](https://www.markdownguide.org/basic-syntax/)
+
+## Éviter d'envoyer des fichiers/dossiers sur Github
+
+Vous avez la possibilité de dire à Github qu'il y a certains fichiers et dossiers que vous ne souhaiteez pas partager sur votre repository.
+
+Pour cela, vous allez devoir :
+* Créer un fichier .gitignore à la racine de votre dossier/projet
+* Dans le fichier .gitignore, vous devez ajouter ligne par ligne les fichiers/dossiers que vous ne souhaitez pas ajouter à votre repository.
+
+### Exemple de fichier .gitignore
+```
+# Ceci est un commentaire pour le gitignore
+# Vous pouvez mettre des commentaires dans votre fichier
+.code.js
+node_modules
+./css
+./img
+.notadded.js
+```
